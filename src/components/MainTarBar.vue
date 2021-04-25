@@ -1,0 +1,49 @@
+<template>
+	<div>
+		<tab-bar>
+			<tab-bar-item path="/home">
+				<template v-slot:item-icon><img src="../assets/img/tabbar/home.svg" alt=""></template>
+				<template v-slot:item-icon-active><img src="../assets/img/tabbar/home-active.svg" alt=""></template>
+				<template v-slot:text>
+					<div>首页</div>
+				</template>
+			</tab-bar-item>
+			<tab-bar-item path="/categroy">
+				<template v-slot:item-icon><img src="../assets/img/tabbar/category.svg" alt=""></template>
+				<template v-slot:item-icon-active><img src="../assets/img/tabbar/category-active.svg" alt=""></template>
+				<template v-slot:text>
+					<div>分类</div>
+				</template>
+			</tab-bar-item>
+			<tab-bar-item path="shopcart">
+				<template v-slot:item-icon><img src="../assets/img/tabbar/shopcart.svg" alt=""></template>
+				<template v-slot:item-icon-active><img src="../assets/img/tabbar/shopcart-active.svg" alt=""></template>
+				<template v-slot:text>
+					<div>购物车</div>
+				</template>
+			</tab-bar-item>
+			<tab-bar-item path="profile">
+				<template v-slot:item-icon><img src="../assets/img/tabbar/profile.svg" alt=""></template>
+				<template v-slot:item-icon-active><img src="../assets/img/tabbar/profile-active.svg" alt=""></template>
+				<template v-slot:text>
+					<div>我的</div>
+				</template>
+			</tab-bar-item>
+		</tab-bar>
+	</div>
+</template>
+
+<script>
+	import TabBar from './tabbar/TabBar.vue'
+	import TabBarItem from './tabbar/TabBarItem.vue'
+	export default {
+		name: 'MainTarBar',
+		components: {
+			TabBar,
+			TabBarItem
+		}
+	}
+</script>
+
+<style>
+</style>
